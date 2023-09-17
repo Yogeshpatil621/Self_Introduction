@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9e7d526b1b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2 class="logo">CodSoft</h2>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>SOFTWARE DEVELOPER</p>
+                <H1>HI, I AM <span>YOGESH PATIL</span><br>FROM SHIRPUR</H1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="C:\Users\Smart\Pictures\Saved Pictures\y.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <H1 class="sub-title">ABOUT ME</H1>
+                    <p>Hello, I am Yogesh Currently I am pursuing my second year (BCA)  in R.C Patel Edu Trusts Institute Of Management Research And Development, by KBC North maharashtra university.
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br>oops</li>
+                            <li><span>C</span><br>C++</li>
+                            <li><span>DBMS</span><br>SQL</li>
+                            <li><span>HTML/CSS</span><br>JS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+
+                            <li><span>Bosch's vocational program</span><br>Bosch India Foundation</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Secondary School Certificate </span>2019<br></li>
+                            <li><span>Higher Secondary Certificate</span><br>2010-2021</li>
+                            <li><span>BCA 1st year completed</span><br>2022-2023</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------services----------------->
+    <div id="services">
+        <div class="container">
+            <H1 class="sub-title">My services</H1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
+                    <p>Object oriented programming in python</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>WEB DEVELOPEMENT</h2>
+                    <p>Making of different merchent website using different languages</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>C++</h2>
+                    <p>Database </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <!------------portfolio----------------->
+        <!----------contact-------------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title"><i class="fa-sharp fa-solid fa-paper-plane"></i>Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>yogeshpatil9551@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>7721923650</p>
+                        <p><i class="fa-brands fa-linkedin"></i>https://www.linkedin.com/in/yogesh-patil-733636286</p> 
+                        <p><i class="fa-brands fa-github"></i> ihttps://github.com/Yogeshpatil621 </p>          
+                        <div class= "social-icon">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></i></a>
+                            <a href=""><i class="fa-brands fa-WhatApp"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your email" required>
+                            <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+</body>
+</html>
